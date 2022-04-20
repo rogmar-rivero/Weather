@@ -1,0 +1,14 @@
+@import 'variables';
+
+nav.nav {
+  padding: 0.75rem 0.50rem;
+  margin-bottom: 0.75rem;
+  background: $main-color;
+
+  .brand {
+    color: $white;
+    line-height: 1.75rem;
+    font-size: 1.50rem;
+    font-weight: 600;
+  }
+}

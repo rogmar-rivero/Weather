@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
+@import 'variables';
+
+html,body,div,input 
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+*,*::after,*::before 
+{
+  box-sizing: border-box;
+}
+
+body 
+{
+  background-color: $secondary-color;
+  font-family: 'Lato',sans-serif;
+  color: $grey;
+  line-height: 1.5;
+
+  .container 
+  {
+    width: 50%;
+  }
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+// utility
+
+.width-33 {
+  width: 33.33%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.px-auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+.py-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+//spinner
+
+.overlay {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($grey,0.1);
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 95%;
+  }
+}
